@@ -81,7 +81,7 @@ const Settings = () => {
                   <input
                     type="text"
                     className="form-control form-control-lg"
-                    placeholder="Url of profile pictures"
+                    placeholder="Url of profile picture"
                     value={image || ""}
                     onChange={(e) => setImage(e.target.value)}
                   />
@@ -99,7 +99,7 @@ const Settings = () => {
                   <textarea
                     className="form-control form-control-lg"
                     rows="6"
-                    placeholder="Bio"
+                    placeholder="Short bio about you"
                     value={bio || ""}
                     onChange={(e) => setBio(e.target.value)}
                   />
@@ -133,7 +133,7 @@ const Settings = () => {
                   type="submit"
                   className="btn btn-lg btn-primary pull-xs-right"
                 >
-                  Update info
+                  Update Settings
                 </button>
               </fieldset>
             </form>

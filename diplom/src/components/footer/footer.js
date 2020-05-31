@@ -11,8 +11,9 @@ function Footer() {
           className="attribution text-muted font-weight-lighter"
           style={{ fontSize: ".8rem" }}
         >
-          © 2020. An interactive learning project from Thinkster. Code licensed
-          under MIT.
+          © 2020. An interactive learning project from
+          <a href="https://thinkster.io/">Thinkster</a>. Code licensed under
+          MIT.
         </span>
       </div>
     </footer>

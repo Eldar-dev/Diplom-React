@@ -49,7 +49,7 @@ const ArticleForm = ({ onSubmit, errors, initialValues }) => {
                   <input
                     type="text"
                     className="form-control form-control-lg"
-                    placeholder="What is this article about?"
+                    placeholder="What's this article about?"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                   />
@@ -58,7 +58,7 @@ const ArticleForm = ({ onSubmit, errors, initialValues }) => {
                   <textarea
                     className="form-control form-control-lg"
                     rows="8"
-                    placeholder="Write your article"
+                    placeholder="Write your article (in markdown)"
                     value={body}
                     onChange={(e) => setBody(e.target.value)}
                   />
@@ -67,7 +67,7 @@ const ArticleForm = ({ onSubmit, errors, initialValues }) => {
                   <input
                     type="text"
                     className="form-control form-control-lg"
-                    placeholder="Tags"
+                    placeholder="Enter tags"
                     value={tagList}
                     onChange={(e) => setTagList(e.target.value)}
                   />
@@ -77,7 +77,7 @@ const ArticleForm = ({ onSubmit, errors, initialValues }) => {
                     type="submit"
                     className="btn btn-lg pull-xs-right btn-primary"
                   >
-                    Publish article
+                    Publish Article
                   </button>
                 </fieldset>
               </fieldset>

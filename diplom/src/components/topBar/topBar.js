@@ -1,7 +1,6 @@
 import React, { useContext, Fragment } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { CurrentUserContext } from "../../context/curentUser/currentUserContext";
-import "./topBar.css";
 
 const TopBar = () => {
   const [currentUserState] = useContext(CurrentUserContext);
@@ -36,13 +35,13 @@ const TopBar = () => {
               <li className="nav-item mr-2 ml-2">
                 <NavLink to={"/articles/new"} className="nav-link">
                   <i className="ion-compose"></i>
-                  New post
+                  New Article
                 </NavLink>
               </li>
               <li className="nav-item mr-2 ml-2">
                 <NavLink to={"/settings"} className="nav-link">
                   <i className="ion-gear-a"></i>
-                  Setings
+                  Settings
                 </NavLink>
               </li>
               <li className="nav-item mr-2 ml-2">

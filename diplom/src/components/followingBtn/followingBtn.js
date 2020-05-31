@@ -7,11 +7,11 @@ const FollowingBtn = ({ username, following }) => {
   const [{ response }, doFetch] = useFetch(apiUrl);
   const textBtn = response
     ? response.profile.following
-      ? `Unfollowing ${username}`
-      : `Following ${username}`
+      ? `Unfollow ${username}`
+      : `Follow ${username}`
     : following
-    ? `Unfollowing ${username}`
-    : `Following ${username}`;
+    ? `Unfollow ${username}`
+    : `Follow ${username}`;
   const isFollowingResponse = response ? response.profile.following : following;
 
   const cls = isFollowingResponse
