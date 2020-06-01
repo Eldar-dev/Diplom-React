@@ -4,7 +4,6 @@ import useFetch from "../../hooks/useFetch";
 import Loading from "../../components/loading";
 import ErrorMessage from "../../components/errorMessage";
 import UserArticles from "./components/UserArticles";
-import FollowingBtn from "../../components/followingBtn";
 
 const Index = ({ match, location }) => {
   const slug = match.params.slug;
@@ -33,10 +32,13 @@ const Index = ({ match, location }) => {
               <img src={response.profile.image} className="user-img" alt="" />
               <h4>{response.profile.username}</h4>
               <p>{response.profile.bio}</p>
-              <FollowingBtn
-                username={response.profile.username}
-                following={response.profile.following}
-              />
+              <a
+                className="btn btn-sm btn-outline-secondary action-btn"
+                href="/settings"
+              >
+                <i className="ion-gear-a"></i>
+                Edit Profile Settings
+              </a>
             </div>
           </div>
         </div>
@@ -60,7 +62,7 @@ const Index = ({ match, location }) => {
                     to={`/profiles/${response.profile.username}/favorites`}
                     className="nav-link"
                   >
-                    Favorites Posts
+                    Favorited Posts
                   </NavLink>
                 </li>
               </ul>

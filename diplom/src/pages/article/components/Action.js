@@ -23,6 +23,7 @@ const Actions = ({ author, article, deleteArticle, doFetch }) => {
           />
         </span>
       )}
+
       <span>
         <AddToFavorites
           isFavorited={article.favorited}
