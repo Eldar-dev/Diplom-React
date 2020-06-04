@@ -36,8 +36,7 @@ const Index = ({ match, location }) => {
                 className="btn btn-sm btn-outline-secondary action-btn"
                 href="/settings"
               >
-                <i className="ion-gear-a"></i>
-                Edit Profile Settings
+                <i className="ion-gear-a"></i> Edit Profile Settings
               </a>
             </div>
           </div>
